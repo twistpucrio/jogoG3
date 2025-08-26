@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto Jogo</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="styles/box.css">
+    <link rel="stylesheet" href="styles/responsividade.css">
+    <script src="java/script.js"></script>
+    <script src="java/app.js"></script>
+    <script src="java/modal.js" defer></script>
+</head>
+<body id="bod">
+   
+    <nav id="menu">
+        
+    </nav>
+    <section id="main">
+        <p id="p1"> Quebra-Caça</p>
+        <div class="box1BemVindos">
+            <p>Bem vindos ao quebra-caça, o jogo que vai te deixar sem palavras. Abaixo você pode ver as regras e depois é só jogar! Boa Sorte!</p>
+        </div>
+        <br/><br/><br/><br/>
+      
+        <div class="boxQuadrado">
+        <a id="a1" href="pag1.html">Jogue</a>
+        </div>
+        <!--Aqui comeca o modal-->
+          <div class="boxQuadrado">
+            <button id="openModal">Regras</button>
+         </div>
+        <div id="fadee" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modalHeader"> 
+                <h2>Regras do Quebra-Caça</h2>
+                <button id="closeModal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <p> 1- O jogo consiste em adivinhar as palavras corretas que estão embaralhadas com outras letras aleatórias;
+                    <br/>
+                    2- Ao achar uma nova palavra, arraste seu mouse pelas letras que a compõem para selecioná-las;
+                    <br/>
+                    3- Tente achar o máximo de palavras dentro do tempo indicado pelo timer na tela!
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="boxQuadradoCentro">
+            <a id="a1" href="sobreNos.html">Sobre Nós</a>
+        </div>
+
+        
+    </section>
+    <footer id="rod"></footer>
+</body>
+</html>
