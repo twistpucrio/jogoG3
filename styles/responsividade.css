@@ -1,0 +1,91 @@
+@media screen and (400px <=width <=800px){
+    div.boxQuadrado{
+    width:300px;
+    height:20px;
+    font-size:30pt;
+    
+}
+ 
+div.box1BemVindos{
+    width:600px;
+    height:200px;
+    font-size: 15pt;
+ 
+}
+
+div.boxQuadradoCentro{
+    width:300px;
+    height:20px;
+    font-size:20pt;
+    
+}
+
+#p1{
+    font-size: 55pt;;
+}
+
+div.box1{
+    width:700px;
+   height:130px;
+}
+div.box2{
+    width:150px;
+    height:25px;
+    line-height: 12px;
+}
+#tema{
+     font-size: 15pt;
+}
+#a1{
+    font-size: 15pt;;
+}
+
+div.box3{ 
+    width:100px;
+    height:20px;
+    font-size:10pt;
+    
+}
+#openModal{
+    font-size: 15pt;
+}
+
+#div1{
+    width:520px;
+    height:270px;
+    font-size:12pt;
+}
+a.btn{
+    font-size: 10pt;
+}
+#btnGerar{
+    font-size: 10pt;
+}
+#tit{
+    font-size:12pt;
+}
+div.bpal{
+    border-radius: 10px;
+    border: #1A66CC 3px solid;
+    width: 100px;
+    height: 20px;
+    background-color: #33CCFF;
+    color: #000099;
+    margin: 5px 0;        /* só espaçamento vertical, sem empurrar para o lado */
+    padding: 5px;
+    text-align: center;
+}
+#pp{
+    font-size: 7pt;
+}
+#div2{
+    width:850px;
+    height:350px;
+    font-size:11pt;
+}
+#div3{
+    width:900px;
+    height:400px;
+    font-size:10pt; 
+}
+}

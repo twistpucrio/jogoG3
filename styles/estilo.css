@@ -1,0 +1,191 @@
+@import url(/jogoG3/font/Bitcount/Bitcount-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+@font-face {
+    font-family: "JogoFont";
+    src: url(/jogoG3/font/Bitcount/Bitcount-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf)
+    format('truetype');
+}
+
+@import url(/jogoG3/font/Press_Start_2P/PressStart2P-Regular.ttf);
+@font-face {
+    font-family: "jogo2";
+    src: url(/jogoG3/font/Press_Start_2P/PressStart2P-Regular.ttf)
+    format('truetype');
+}
+#p1{
+    font-family:'JogoFont';
+    font-size:150pt;
+    color: #33CCFF;
+    text-align: center;
+}
+#bod{
+    background-color:#000099;
+}
+
+.controls { margin: 12px 0; }
+.matriz { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height: 1.6; }
+button {
+     padding: 8px 12px; 
+     border: 1px solid #33CCFF; 
+     border-radius: 8px; 
+    background-color: #33CCFF;
+     color:#000099;
+     cursor: pointer; 
+     opacity:0.8;
+     transition:0.4s;
+    }
+button:hover { 
+    opacity:1;
+    background-color: #1A66CC ;
+    border-radius: 10px;
+ }
+ 
+#closeModal{
+    background-color: #1A66CC;
+    color:white;
+    border: 3px #1A66CC solid;
+    
+}
+#fadee{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index:5;
+}
+
+#openModal{
+    color:#000099;
+    font-family:'jogo2';
+    font-size: 30pt;
+}
+
+#modal{
+    position:fixed;
+    left:50%;
+    top:50%;
+    z-index:10;
+    transform:translate(-50%, -50%);
+    background-color: white;
+    width:500px;
+    padding:1.2rem;
+    border-radius: .5rem;
+
+}
+
+.modalHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1A66CC;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body{
+    margin-bottom: 1rem;
+}
+
+
+#fadee, #modal{
+    transition:.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#modal.hide{
+    top:0;
+    transition:1s;
+}
+
+#modal.hide,
+#fadee.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#fade, #modal{
+    transition: .5s ease;
+    opacity:1;
+    visibility: visible;
+}
+a.btn{
+    font-size:15pt;
+}
+
+#p2{
+    font-family:'jogo2';
+    font-size:65pt;
+    color: #33CCFF;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*CSS: Sobre Nós*/
+
+.bolinha{
+    border: #000099 5px solid;
+    border-radius: 50%;
+    height: 250px;
+}
+
+.pessoa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.foto{
+    display: block;
+    font-size: 25px;
+    width: 400px;
+    height: 350px;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    margin: 30px;
+}
+
+.social{
+    width: 70%;
+    margin: 80px;
+}
+
+.social a{
+    display: inline-block;
+}
+
+.social a:hover {
+    text-decoration: none;
+    background: none;
+}
+
+.rede_social{
+    width: 60px;
+}
+
+.texto{
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+#paragrafo{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 30px;
+    margin: auto 60px;
+}
+
+.email{
+    font-size: 10pt;
+    display: inline-block;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

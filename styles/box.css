@@ -1,0 +1,170 @@
+ div.box1{
+    border-radius: 10px;
+    border:#1A66CC 3px solid;
+    width:1300px;
+   height:350px;
+   background-color: #2699E6;
+   color: #000099;
+   font-size: 30pt;
+   display: block;
+   margin: 0 auto;
+   padding: 5px;
+   border:2px;
+   text-align:center;
+   justify-content: center;
+   font-family: 'jogo2';
+}
+
+#tema{
+    font-size:40pt;
+    font-family: 'jogo2';
+}
+div.box2{
+    border-radius: 10px;
+    border:#33CCFF 3px solid;
+    width:300px;
+    height:150px;
+    background-color: #33CCFF;
+    color:#000099;
+    font-size:25pt;
+    display: inline-block;
+    text-align: center;
+    font-family: 'jogo2';
+    justify-content: center;
+    align-items: center;
+    line-height: 150px;
+    
+
+}
+div.box3{
+    border-radius: 10px;
+    border:#33CCFF 3px solid;
+    width:200px;
+    height:35px;
+    background-color: #33CCFF;
+    color:#000099;
+    font-size:20pt;
+    display: inline-block;
+    text-align: center;
+    font-family: 'jogo2';
+    margin: 0 auto;
+   padding: 5px;
+   border:2px;
+   text-align:center;
+   justify-content: center
+}
+#box_sobrenos{
+    width: 90%;
+    height: 100%;
+    background-color: #33CCFF;
+    color:#000099;
+    font-size:20pt;
+    border: #000099 dotted 10px;
+}
+
+div.boxQuadrado{
+    border-radius: 10px;
+    border:#33CCFF 3px solid;
+    width:500px;
+    height:50px;
+    background-color: #33CCFF;
+    color:#000099;
+    font-size:30pt;
+    display: inline-block;
+    text-align: center;
+    font-family: 'jogo2';
+    margin:50px;
+    padding:8%;
+     
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
+
+div.facilMatriz{
+    width:400px;
+    height:400px;
+}
+#a1{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color:#000099;
+   
+}
+a:hover{
+    background-color: #1A66CC ;
+    border-radius: 10px;
+}
+
+ div.box1BemVindos{
+    border-radius: 10px;
+    border:#1A66CC 3px solid;
+    width:1300px;
+   height:350px;
+   background-color: #2699E6;
+   color: #000099;
+   font-size: 30pt;
+   display: flex;
+   margin: 0 auto;
+   padding: 5px;
+   border:2px;
+   text-align:center;
+   justify-content: center;
+   align-items: center;
+   font-family: 'jogo2';
+}
+
+div.boxQuadradoCentro{
+    border-radius: 10px;
+    border:#33CCFF 3px solid;
+    width:500px;
+    height:50px;
+    background-color: #33CCFF;
+    color:#000099;
+    font-size:30pt;
+    display: block;
+    text-align: center;
+    font-family: 'jogo2';
+    margin:50px auto;
+    padding:8%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
+
+/*rafa*/
+div, .grid, .grid-cell{
+user-select: none; /* bloqueia seleção nativa */
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE/Edge antigo */
+}
+
+.grid-cell{
+padding: 0px;
+cursor: pointer;
+user-select: none;
+font-size:25px;
+ 
+}
+
+.selected {
+background-color: yellow;
+}
+
+.found {
+background-color: lightgreen;
+}
+
+#grid {
+border-collapse: collapse;
+user-select: none; /* impede seleção de texto */
+}
+
+#matriz{
+    gap:15px;
+    word-spacing: 10%;
+}
