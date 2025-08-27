@@ -67,11 +67,14 @@ function addGridListeners(container) {
 }
 
 function selectCell(cell) {
-    if (!selectedCells.includes(cell) && !cell.classList.contains('found')) {
+    if (!selectedCells.includes(cell)) {
         selectedCells.push(cell);
-        cell.classList.add('selected');
+        if (!cell.classList.contains('found')) {
+            cell.classList.add('selected');
+        }
     }
 }
+
 
 function clearSelection() {
     selectedCells.forEach(c => c.classList.remove('selected'));
