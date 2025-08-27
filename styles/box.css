@@ -168,3 +168,20 @@ user-select: none; /* impede seleção de texto */
     gap:15px;
     word-spacing: 10%;
 }
+
+#controlsContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#timer{
+    width: auto;
+    padding: 5px 15px;
+    height: 40px;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
