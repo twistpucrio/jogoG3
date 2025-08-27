@@ -71,7 +71,7 @@ function selectCell(cell) {
         selectedCells.push(cell);
         cell.classList.add('selected');
     }
-}
+} 
 
 function clearSelection() {
     selectedCells.forEach(c => c.classList.remove('selected'));
