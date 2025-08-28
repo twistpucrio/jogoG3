@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="styles/box.css">
       <link rel="stylesheet" href="styles/format.css">
       <link rel="stylesheet" href="styles/responsividade.css">
+      <link rel=stylesheet href="styles/tentarmod.css">
       <script src="java/scriptMD.js"></script>
         <script src="java/appMCantores.js"></script>
          <script src="java/drag.js"></script>
@@ -81,5 +82,16 @@
 
       </div>
     </section>
+        <div id="timeoutModal" class="modal">
+      <div class="modal-content">
+        <img src="img/você-perde-o-carimbo-de-borracha-110063319.webp" alt="Tempo esgotado!" class="modal-image">
+        <h2>Tempo esgotado!</h2>
+        <div class="modal-buttons">
+          <button onclick="irParaMenu()">Voltar ao Menu</button>
+          <button onclick="tentarNovamente()">Tentar Novamente</button>
+          <button onclick="trocarTema()">Trocar Tema</button>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
