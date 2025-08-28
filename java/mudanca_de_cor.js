@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const cssBox = document.getElementById("css_box");
   const cssFormat = document.getElementById("css_format");
 
-  // aplica o tema salvo no localStorage (se existir)
   if (localStorage.getItem("acessibilidade") === "on") {
     cssPrincipal.setAttribute("href", "styles/acessibilidade.css");
     cssBox.setAttribute("href", "styles/box_acessibilidade.css");
