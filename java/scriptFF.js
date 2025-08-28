@@ -9,7 +9,7 @@ window.addEventListener("load",function(){
     var facil= this.document.getElementById("div1");
 });
 
-function criaMatrizComPalavras(tamanho = 12, palavras = []) {
+function criaMatrizComPalavras(tamanho = 123, palavras = []) {
   const grade = Array.from({ length: tamanho }, () => Array(tamanho).fill(''));
 
   for (let palavra of palavras) {

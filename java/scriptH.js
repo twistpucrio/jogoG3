@@ -3,7 +3,6 @@ const DIRECOES = [
   [0, 1],  // →
   [1, 0],  // ↓
   [1, 1],  // ↘
-  [0, 0],
   [-1,0],
   [-1,-1],
   [1,-1],
@@ -14,7 +13,7 @@ window.addEventListener("load",function(){
     var facil= this.document.getElementById("div3");
 });
 
-function criaMatrizComPalavras(tamanho = 12, palavras = []) {
+function criaMatrizComPalavras(tamanho = 23, palavras = []) {
   const grade = Array.from({ length: tamanho }, () => Array(tamanho).fill(''));
 
   for (let palavra of palavras) {
@@ -22,7 +21,7 @@ function criaMatrizComPalavras(tamanho = 12, palavras = []) {
 
     let colocado = false;
     // tenta várias vezes até achar um lugar
-    for (let tent = 0; tent < 1000 && !colocado; tent++) {
+    for (let tent = 0; tent < 10000 && !colocado; tent++) {
       const [dr, dc] = DIRECOES[Math.floor(Math.random() * DIRECOES.length)];
       const linha = Math.floor(Math.random() * tamanho);
       const coluna = Math.floor(Math.random() * tamanho);
