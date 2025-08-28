@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     grade = criaMatrizComPalavras(13, palavras);
     exibeMatriz(grade, "matriz");
   });
-});
+}); // fazer uma condição para abrir o modaol e não um botão
 
 let timerInterval;
 const COUNTDOWN_DURATION = 3 * 60 * 1000 + 30 * 1000;

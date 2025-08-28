@@ -66,11 +66,29 @@ function addGridListeners(container) {
     });
 }
 
+
+
+// modificado por rafa modal vencedor
+//const openModal = document.getElementById("openModal"); //nome novo
+let total=0;
+
 function selectCell(cell) {
     if (!selectedCells.includes(cell)) {
         selectedCells.push(cell);
         if (!cell.classList.contains('found')) {
             cell.classList.add('selected');
+/**
+ * Quando encotnrar a palavra inteira, verifique se esta usando um array de palavras para atualização
+ */
+
+            if(total ===  4){                        // contador para modal
+                modal.classList.toggle("hide");
+                fade.classList.toggle("hide");    
+                
+                }
+            else{
+                    total +=1;
+                }
         }
     }
 }

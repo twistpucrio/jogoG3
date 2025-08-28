@@ -19,3 +19,4 @@ fade.addEventListener("click", () => {
   modal.classList.add("hide");
   fade.classList.add("hide");
 });
+

@@ -71,6 +71,7 @@ button:hover {
     width:500px;
     padding:1.2rem;
     border-radius: .5rem;
+    align-items:inline-block; /* rafa modifiquei modal vencedor*/
 
 }
 
@@ -121,6 +122,11 @@ a.btn{
     text-align: center;
     text-decoration: underline;
 }
+
+/* Modal de vencedores:*/
+
+
+
 
 /*CSS: Sobre Nós*/
 
