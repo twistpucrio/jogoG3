@@ -64,6 +64,8 @@ function addGridListeners(container) {
 } else {
     clearSelection();
 }
+    
+ 
             selectedCells = [];
         }
     });
