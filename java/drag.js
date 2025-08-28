@@ -54,13 +54,16 @@ function addGridListeners(container) {
             const palavra = selectedCells.map(cell => cell.textContent).join('').toUpperCase();
 
             if (palavras.map(p => p.toUpperCase()).includes(palavra)) {
-                selectedCells.forEach(cell => {
-                    cell.classList.remove('selected');
-                    cell.classList.add('found');
-                });
-            } else {
-                clearSelection();
-            }
+              selectedCells.forEach(cell => {
+                cell.classList.remove('selected');
+            cell.classList.add('found');
+    });
+
+    // Chama a função para riscar na lista
+    marcarPalavra(palavra);
+} else {
+    clearSelection();
+}
             selectedCells = [];
         }
     });
@@ -77,4 +80,15 @@ function selectCell(cell) {
 
 function clearSelection() {
     selectedCells.forEach(c => c.classList.remove('selected'));
+}
+
+
+function marcarPalavra(palavra) {
+    const lista = document.querySelectorAll(".bpal p");
+    lista.forEach(el => {
+        if (el.textContent.toLowerCase() === palavra.toLowerCase()) {
+            el.style.textDecoration = "line-through";
+            el.style.color = "gray"; // opcional
+        }
+    });
 }
