@@ -1,58 +1,66 @@
 const palavras = ["Mickey", "Minnie", "Cinderella", "Aurora"];
 
-document.addEventListener("DOMContentLoaded", () => {
-  // render inicial
-  let grade = criaMatrizComPalavras(13, palavras);
-  exibeMatriz(grade, "matriz");
-
-  // agora o botão existe -> podemos registrar o listener
-  const btn = document.getElementById("btnGerar");
-  btn.addEventListener("click", () => {
-    grade = criaMatrizComPalavras(13, palavras);
-    exibeMatriz(grade, "matriz");
-  });
-});
-
 let timerInterval;
-const COUNTDOWN_DURATION = 3 * 60 * 1000 + 30 * 1000;
+const COUNTDOWN_DURATION = 3 * 60 * 1000 + 30 * 1000; 
 
-function startTimer()
-{
+function startTimer() {
   clearInterval(timerInterval);
   const endTime = Date.now() + COUNTDOWN_DURATION;
   timerInterval = setInterval(() => {
-    const remaining=endTime - Date.now();
+    const remaining = endTime - Date.now();
 
-    if (remaining<=0)
-    {
+    if (remaining <= 0) {
       clearInterval(timerInterval);
-      document.getElementById("time").textContent="00:00";
-      alert("Tempo esgotado!");
+      document.getElementById("time").textContent = "00:00";
+      showTimeoutModal();
       return;
     }
-    const minutes= Math.floor(remaining / 60000).toString().padStart(2,'0');
-    const seconds= Math.floor((remaining % 60000) / 1000).toString().padStart(2,'0');
-    document.getElementById("time").textContent=`${minutes}:${seconds}`;
+    const minutes = Math.floor(remaining / 60000)
+      .toString()
+      .padStart(2, "0");
+    const seconds = Math.floor((remaining % 60000) / 1000)
+      .toString()
+      .padStart(2, "0");
+    document.getElementById("time").textContent = `${minutes}:${seconds}`;
   }, 1000);
 }
 
-function resetTimer()
-{
-  clearInterval(timerInterval);
-  document.getElementById("time").textContent="10:00";
+function showTimeoutModal() {
+  const modal = document.getElementById("timeoutModal");
+  modal.style.display = "block";
+}
+
+function hideTimeoutModal() {
+  const modal = document.getElementById("timeoutModal");
+  modal.style.display = "none";
+}
+
+function tentarNovamente() {
+  location.reload();
+}
+
+function irParaMenu() {
+  window.location.href = "index.html";
+}
+
+function trocarTema() {
+  window.location.href = "pag1.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // render inicial
+  // Initial matrix render
   let grade = criaMatrizComPalavras(13, palavras);
   exibeMatriz(grade, "matriz");
+
+  // Start the timer
   startTimer();
 
-  // agora o botão existe -> podemos registrar o listener
+  // Button to generate new matrix and restart timer
   const btn = document.getElementById("btnGerar");
   btn.addEventListener("click", () => {
     grade = criaMatrizComPalavras(13, palavras);
     exibeMatriz(grade, "matriz");
     startTimer();
   });
+
 });

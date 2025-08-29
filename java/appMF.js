@@ -1,16 +1,4 @@
 const palavras = ["PrettyWoman", "LegallyBlonde", "Barbie", "StarWars", "Clueless", "Scream", "GrownUps"];
-document.addEventListener("DOMContentLoaded", () => {
-  // render inicial
-  let grade = criaMatrizComPalavras(18, palavras);
-  exibeMatriz(grade, "matriz");
-
-  // agora o botão existe -> podemos registrar o listener
-  const btn = document.getElementById("btnGerar");
-  btn.addEventListener("click", () => {
-    grade = criaMatrizComPalavras(18, palavras);
-    exibeMatriz(grade, "matriz");
-  });
-});
 
 let timerInterval;
 const COUNTDOWN_DURATION = 6 * 60 * 1000;
@@ -26,7 +14,7 @@ function startTimer()
     {
       clearInterval(timerInterval);
       document.getElementById("time").textContent="00:00";
-      alert("Tempo esgotado!");
+      showTimeoutModal();
       return;
     }
     const minutes= Math.floor(remaining / 60000).toString().padStart(2,'0');
@@ -35,11 +23,28 @@ function startTimer()
   }, 1000);
 }
 
-function resetTimer()
-{
-  clearInterval(timerInterval);
-  document.getElementById("time").textContent="03:30";
+function showTimeoutModal() {
+  const modal = document.getElementById("timeoutModal");
+  modal.style.display = "block";
 }
+
+function hideTimeoutModal() {
+  const modal = document.getElementById("timeoutModal");
+  modal.style.display = "none";
+}
+
+function tentarNovamente() {
+  location.reload();
+}
+
+function irParaMenu() {
+  window.location.href = "index.html";
+}
+
+function trocarTema() {
+  window.location.href = "pag1.html";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // render inicial
   let grade = criaMatrizComPalavras(18, palavras);
