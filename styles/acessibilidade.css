@@ -11,31 +11,32 @@
     src: url(/font/Press_Start_2P/PressStart2P-Regular.ttf)
     format('truetype');
 }
+
 #p1{
     font-family:'JogoFont';
     font-size:150pt;
-    color: #33CCFF;
+    color: white;
     text-align: center;
 }
 #bod{
-    background-color:#000099;
+    background-color: black;
 }
 
 .controls { margin: 12px 0; }
 .matriz { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height: 1.6; }
 button {
      padding: 8px 12px; 
-     border: 1px solid #33CCFF; 
+     border: 1px solid gray; 
      border-radius: 8px; 
-    background-color: #33CCFF;
-     color:#000099;
+    background-color: gray;
+     color: white;
      cursor: pointer; 
      opacity:0.8;
      transition:0.4s;
     }
 button:hover { 
     opacity:1;
-    background-color: #1A66CC ;
+    background-color: gray;
     border-radius: 10px;
  }
  
@@ -56,7 +57,7 @@ button:hover {
 }
 
 #openModal{
-    color:#000099;
+    color:black;
     font-family:'jogo2';
     font-size: 30pt;
 }
@@ -78,7 +79,7 @@ button:hover {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #1A66CC;
+    border-bottom: 1px solid gray;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
@@ -117,15 +118,19 @@ a.btn{
 #p2{
     font-family:'jogo2';
     font-size:65pt;
-    color: #33CCFF;
+    color: white;
     text-align: center;
     text-decoration: underline;
+}
+
+a:visited{
+    color: black;
 }
 
 /*CSS: Sobre Nós*/
 
 .bolinha{
-    border: #000099 5px solid;
+    border: #3c3c3c 5px solid;
     border-radius: 50%;
     height: 250px;
 }
