@@ -13,7 +13,7 @@
    text-align:center;
    justify-content: center;
    font-family: 'jogo2';
-}
+ }
 
 #tema{
     font-size:40pt;
@@ -75,7 +75,7 @@ div.boxQuadrado{
     font-family: 'jogo2';
     margin:50px;
     padding:8%;
-     
+      background: linear-gradient(to right, #33CCFF, #2699E6, #1A66CC);
     align-items: center;
     flex-wrap: wrap;
     gap:20px;
@@ -96,6 +96,10 @@ div.facilMatriz{
 a:hover{
     background-color: #1A66CC ;
     border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color:#000099;
 }
 
  div.box1BemVindos{
@@ -132,6 +136,7 @@ div.boxQuadradoCentro{
     align-items: center;
     flex-wrap: wrap;
     gap:20px;
+    background: linear-gradient(to right, #33CCFF, #2699E6, #1A66CC);
 
 }
 
