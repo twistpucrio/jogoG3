@@ -25,6 +25,7 @@
 
  #mudaCor{
     font-family: 'jogo2';
+    border: 0;
  }
 
 .controls { margin: 12px 0; }
