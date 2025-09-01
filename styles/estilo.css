@@ -11,6 +11,7 @@
     src: url(/font/Press_Start_2P/PressStart2P-Regular.ttf)
     format('truetype');
 }
+
 #p1{
     font-family:'JogoFont';
     font-size:150pt;
@@ -216,4 +217,15 @@ a.btn{
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+#btnGerar{
+    font-family: 'jogo2';
+    padding: 10px;
+    border: #33CCFF solid 5px;
+    font-size: 8pt;
+}
+#btnGerar:hover{
+    border: #1A66CC solid 5px;
+    color: white;
 }
