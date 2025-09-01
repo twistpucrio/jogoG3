@@ -25,7 +25,8 @@
 }
 
 .modal-image {
-    max-height: 150px;
+    height: 90px;
+    width: 115px;
     width: auto;
     display: block;
     margin: 0 auto;
