@@ -85,12 +85,33 @@ function clearSelection() {
 }
 
 
+
+
+//Parte modificada modal vencedor
+let total=0;
 function marcarPalavra(palavra) {
     const lista = document.querySelectorAll(".bpal p");
+    let quantidade = lista.length;
+    console.log(quantidade);
     lista.forEach(el => {
         if (el.textContent.toLowerCase() === palavra.toLowerCase()) {
             el.style.textDecoration = "line-through";
             el.style.color = "gray"; // opcional
+            total +=1;
+            
+
+            if (total === quantidade){
+                // contador para modal
+                    modal.classList.toggle("hide");
+                    fade.classList.toggle("hide");    
+                    
+            }
+
+           
+            
         }
+         
+        
+    
     });
 }
