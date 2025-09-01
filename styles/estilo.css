@@ -119,6 +119,21 @@ button:hover {
     pointer-events: all;
 }
 
+#modal.hide,
+#fadee.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#modal,
+#fadee {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: opacity .5s ease, visibility .5s ease;
+}
+
 #modal.hide{
     top:0;
     transition:1s;
