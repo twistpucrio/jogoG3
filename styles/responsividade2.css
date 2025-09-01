@@ -13,19 +13,15 @@
     }
 .boxQuadradoCentro{
     border-radius: 10px;
-    border:#33CCFF 3px solid;
-    width:300px;
+     width:300px;
     height:20px;
-    background-color: #33CCFF;
-    color:#000099;
-    font-size:20pt;
+      font-size:20pt;
     display: inline-block;
     text-align: center;
     font-family: 'jogo2';
     margin:50px;
     padding:8%;
-      background: linear-gradient(to right, #33CCFF, #2699E6, #1A66CC);
-    align-items: center;
+     align-items: center;
     flex-wrap: wrap;
     gap:20px;
 
@@ -81,11 +77,11 @@ a.btn{
 }
 div.bpal{
     border-radius: 10px;
-    border: #1A66CC 3px solid;
+ 
     width: 100px;
     height: 20px;
-    background-color: #33CCFF;
-    color: #000099;
+   
+     
     margin: 5px 0;        /* só espaçamento vertical, sem empurrar para o lado */
     padding: 5px;
     text-align: center;
