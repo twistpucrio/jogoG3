@@ -41,8 +41,10 @@ div.box1{
 }
 .box2{
     width:150px;
-    height:25px;
-    line-height: 12px;
+    height:35px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
 }
 #tema{
      font-size: 15pt;
