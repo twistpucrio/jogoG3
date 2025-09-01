@@ -2,22 +2,33 @@
     div.boxQuadrado{
     width:300px;
     height:20px;
-    font-size:30pt;
-    
-}
+    font-size:20pt;
+   }
  
-div.box1BemVindos{
+    div.box1BemVindos{
     width:600px;
     height:200px;
     font-size: 15pt;
  
-}
-
+    }
 div.boxQuadradoCentro{
+    border-radius: 10px;
+    border:#33CCFF 3px solid;
     width:300px;
     height:20px;
+    background-color: #33CCFF;
+    color:#000099;
     font-size:20pt;
-    
+    display: inline-block;
+    text-align: center;
+    font-family: 'jogo2';
+    margin:50px;
+    padding:8%;
+      background: linear-gradient(to right, #33CCFF, #2699E6, #1A66CC);
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+
 }
 
 #p1{
@@ -47,13 +58,15 @@ div.box3{
     
 }
 #openModal{
-    font-size: 15pt;
+    font-size: 20pt;
 }
 
 #div1{
     width:520px;
-    height:270px;
-    font-size:12pt;
+    height:450px;
+    font-size:10pt;
+  
+    
 }
 a.btn{
     font-size: 10pt;
@@ -80,12 +93,12 @@ div.bpal{
 }
 #div2{
     width:850px;
-    height:350px;
+    height:650px;
     font-size:11pt;
 }
 #div3{
     width:900px;
-    height:400px;
+    height:800px;
     font-size:10pt; 
 }
 
@@ -122,4 +135,16 @@ h5{
 #paragrafo{
     font-size:9pt;
 }
+div.facilmatriz{
+    font-size: 10pt;
+}
+
+
+.grid-cell{
+font-size:10px;
+ letter-spacing: -0.5px;
+ 
+}
+
+
 }
