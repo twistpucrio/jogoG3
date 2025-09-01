@@ -1,5 +1,5 @@
 @media screen and (400px <=width <=800px){
-    div.boxQuadrado{
+    .boxQuadrado{
     width:300px;
     height:20px;
     font-size:20pt;
@@ -11,7 +11,7 @@
     font-size: 15pt;
  
     }
-div.boxQuadradoCentro{
+.boxQuadradoCentro{
     border-radius: 10px;
     border:#33CCFF 3px solid;
     width:300px;
@@ -36,10 +36,10 @@ div.boxQuadradoCentro{
 }
 
 div.box1{
-    width:700px;
-   height:130px;
+    width:600px;
+   height:200px;
 }
-div.box2{
+.box2{
     width:150px;
     height:25px;
     line-height: 12px;
@@ -47,11 +47,11 @@ div.box2{
 #tema{
      font-size: 15pt;
 }
-#a1{
+.a1{
     font-size: 15pt;;
 }
 
-div.box3{ 
+.box3{ 
     width:100px;
     height:20px;
     font-size:10pt;
