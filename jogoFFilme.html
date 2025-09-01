@@ -8,8 +8,8 @@
     <link id="css_principal" rel="stylesheet" href="styles/estilo.css">
     <link id="css_box"rel="stylesheet" href="styles/box.css">
     <link id="css_format" rel="stylesheet" href="styles/format.css">
+    <link id="css_modal" rel=stylesheet href="styles/tentarmod.css">
     <link rel="stylesheet" href="styles/responsividade2.css">
-    <link rel=stylesheet href="styles/tentarmod.css">
 
     <script src="java/scriptFF.js"></script>
     <script src="java/appFF.js"></script>
@@ -81,24 +81,26 @@
 
 
     <!--Modal vencedor-->
+    <div class="modal-content">
     <div id="fadee" class="hide"></div>
             <div id="modal" class="hide">
             <div class="modal-body">
-                <p> PARABÉNS!!!
+                <h2> PARABÉNS!!!
                     <br/>
                     Você venceu a partida e encontrou todas as palvras escondidas!
                     <br/>
                     Agora, está na hora de ir para um nível mais desafiador...<br/>
                     Vamos lá?
                     <br>
-                </p>
+                </h2>
             </div>
-
-            
+                <div class="modal-buttons">
+                <button onclick="irParaMenu()">Voltar ao Menu</button>
                 <button onclick="tentarNovamente()">Tentar Novamente</button>
-                <button id="proximo"><a href="jogoMFilme.html">Próximo nível</a></button>
+                <button id="proximo"><a href="jogoMDisney.html">Próximo nível</a></button>
+                </div>
             </div>
-
+            </div>
         </div>
 </body>
 </html>
