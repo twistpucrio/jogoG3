@@ -11,38 +11,57 @@
     src: url(/font/Press_Start_2P/PressStart2P-Regular.ttf)
     format('truetype');
 }
+
 #p1{
     font-family:'JogoFont';
     font-size:150pt;
     color: #33CCFF;
     text-align: center;
+    margin: 120px;
 }
 #bod{
     background-color:#000099;
 }
 
+ #mudaCor{
+    font-family: 'jogo2';
+    border: 0;
+ }
+
 .controls { margin: 12px 0; }
 .matriz { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height: 1.6; }
 button {
      padding: 8px 12px; 
-     border: 1px solid #33CCFF; 
      border-radius: 8px; 
-    background-color: #33CCFF;
+     background-color: #33CCFF;
      color:#000099;
      cursor: pointer; 
      opacity:0.8;
      transition:0.4s;
     }
+
 button:hover { 
     opacity:1;
-    background-color: #1A66CC ;
+    background-color: #1A66CC;
     border-radius: 10px;
  }
- 
+
+ a{
+    text-decoration: none;
+ }
+
+ a:hover{
+    color: white;
+ }
+
+/*CSS: Modal*/
+
 #closeModal{
-    background-color: #1A66CC;
-    color:white;
-    border: 3px #1A66CC solid;
+    background-color: #33CCFF;
+    color: #000099;
+    border: 3px #33CCFF solid;
+    font-family:'jogo2';
+    font-size: 10pt;
     
 }
 #fadee{
@@ -56,35 +75,41 @@ button:hover {
 }
 
 #openModal{
-    color:#000099;
     font-family:'jogo2';
     font-size: 30pt;
 }
 
 #modal{
-    position:fixed;
-    left:50%;
-    top:50%;
-    z-index:10;
-    transform:translate(-50%, -50%);
-    background-color: white;
-    width:500px;
-    padding:1.2rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    background-color: #000099;
+    width: 800px;
+    padding: 1.2rem;
     border-radius: .5rem;
+    color: white;
 
 }
 
 .modalHeader{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #1A66CC;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    font-family:'jogo2';
+    font-size: 15pt;
+    margin-left: 25px;
 }
 
 .modal-body{
     margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 15pt;
+    text-align: justify;
 }
 
 
@@ -92,6 +117,21 @@ button:hover {
     transition:.5s;
     opacity: 1;
     pointer-events: all;
+}
+
+#modal.hide,
+#fadee.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#modal,
+#fadee {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: opacity .5s ease, visibility .5s ease;
 }
 
 #modal.hide{
@@ -110,6 +150,7 @@ button:hover {
     opacity:1;
     visibility: visible;
 }
+
 a.btn{
     font-size:15pt;
 }
@@ -120,6 +161,11 @@ a.btn{
     color: #33CCFF;
     text-align: center;
     text-decoration: underline;
+}
+
+.a2{
+    text-decoration: none;
+    color: #000099;
 }
 
 /*CSS: Sobre Nós*/
@@ -187,4 +233,15 @@ a.btn{
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+#btnGerar{
+    font-family: 'jogo2';
+    padding: 10px;
+    border: #33CCFF solid 5px;
+    font-size: 8pt;
+}
+#btnGerar:hover{
+    border: #1A66CC solid 5px;
+    color: white;
 }

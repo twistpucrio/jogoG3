@@ -12,12 +12,34 @@
     format('truetype');
 }
 
+a{
+    text-decoration: none;
+ }
+
+a.btn{
+    font-size:15pt;
+}
+
+a:visited{
+    color: black;
+}
+
+#p2{
+    font-family:'jogo2';
+    font-size:65pt;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
 #p1{
     font-family:'JogoFont';
     font-size:150pt;
     color: white;
     text-align: center;
+    margin: 120px;
 }
+
 #bod{
     background-color: black;
 }
@@ -26,12 +48,10 @@
 .matriz { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height: 1.6; }
 button {
      padding: 8px 12px; 
-     border: 1px solid gray; 
      border-radius: 8px; 
     background-color: gray;
      color: white;
      cursor: pointer; 
-     opacity:0.8;
      transition:0.4s;
     }
 button:hover { 
@@ -39,11 +59,19 @@ button:hover {
     background-color: gray;
     border-radius: 10px;
  }
+
+ #mudaCor{
+    font-family: 'jogo2';
+ }
  
+/*CSS: Modal*/
+
 #closeModal{
-    background-color: #1A66CC;
-    color:white;
-    border: 3px #1A66CC solid;
+    background-color: gray;
+    color: white;
+    border: 3px gray solid;
+    font-family:'jogo2';
+    font-size: 10pt;
     
 }
 #fadee{
@@ -57,35 +85,41 @@ button:hover {
 }
 
 #openModal{
-    color:black;
     font-family:'jogo2';
     font-size: 30pt;
 }
 
 #modal{
-    position:fixed;
-    left:50%;
-    top:50%;
-    z-index:10;
-    transform:translate(-50%, -50%);
-    background-color: white;
-    width:500px;
-    padding:1.2rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 800px;
+    padding: 1.2rem;
     border-radius: .5rem;
+    color: white;
 
 }
 
 .modalHeader{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid gray;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    font-family:'jogo2';
+    font-size: 15pt;
+    margin-left: 25px;
 }
 
 .modal-body{
     margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 15pt;
+    text-align: justify;
 }
 
 
@@ -110,21 +144,6 @@ button:hover {
     transition: .5s ease;
     opacity:1;
     visibility: visible;
-}
-a.btn{
-    font-size:15pt;
-}
-
-#p2{
-    font-family:'jogo2';
-    font-size:65pt;
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-}
-
-a:visited{
-    color: black;
 }
 
 
@@ -195,3 +214,15 @@ a:visited{
     gap: 30px;
 }
 
+#btnGerar{
+    font-family: 'jogo2';
+    padding: 10px;
+    border: gray solid 5px;
+    color: white;
+    font-size: 8pt;
+}
+#btnGerar:hover{
+    border: white solid 5px;
+    color: black;
+    background-color: white;
+}
