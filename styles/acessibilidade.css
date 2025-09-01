@@ -48,12 +48,10 @@ a:visited{
 .matriz { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height: 1.6; }
 button {
      padding: 8px 12px; 
-     border: 1px solid gray; 
      border-radius: 8px; 
     background-color: gray;
      color: white;
      cursor: pointer; 
-     opacity:0.8;
      transition:0.4s;
     }
 button:hover { 
@@ -213,4 +211,17 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+#btnGerar{
+    font-family: 'jogo2';
+    padding: 10px;
+    border: gray solid 5px;
+    color: white;
+    font-size: 8pt;
+}
+#btnGerar:hover{
+    border: white solid 5px;
+    color: black;
+    background-color: white;
 }
