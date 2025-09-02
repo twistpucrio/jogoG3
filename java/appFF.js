@@ -46,12 +46,11 @@ function trocarTema() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // render inicial
+ 
   let grade = criaMatrizComPalavras(13, palavras);
   exibeMatriz(grade, "matriz");
   startTimer();
-
-  // agora o botão existe -> podemos registrar o listener
+ 
   const btn = document.getElementById("btnGerar");
   btn.addEventListener("click", () => {
     grade = criaMatrizComPalavras(13, palavras);
@@ -60,10 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const lista = document.querySelectorAll(".bpal p");
   lista.forEach(el => {
     el.style.textDecoration = "none";
-    el.style.color = "black"; // ou a cor original
+    el.style.color = "black";  
   });
 
-  // 🔹 Resetar contador de palavras encontradas
+   
   if (typeof total !== "undefined") {
     total = 0;
   }
