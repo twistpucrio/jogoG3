@@ -105,14 +105,42 @@ function marcarPalavra(palavra) {
                 // contador para modal
                     modal.classList.toggle("hide");
                     fade.classList.toggle("hide");    
+                    mostrarModalVencedor();
+
                     
             }
 
-           
+        
+
+
             
         }
          
         
     
     });
+}
+
+function dispararConfete() {
+    const minhaConfete = confetti.create(document.body, {
+        resize: true,
+        useWorker: true,
+    });
+
+    // Dispara o confete
+    minhaConfete({
+        particleCount: 100,
+        spread: 160,
+        origin: { y: 0.6 },
+        colors: ['#f9fbfcff', '#0cbef5ff', '#0000ff'],
+    });
+}
+
+// Função para exibir o modal vencedor e disparar o confete automaticamente
+function mostrarModalVencedor() {
+    // Mostrar o modal
+    document.getElementById("modal-vencedor").style.display = "block";
+    
+    // Disparar o confete
+    dispararConfete();
 }

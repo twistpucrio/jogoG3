@@ -109,3 +109,149 @@
 <script>
   let nivel = "facil";
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal Vencedor -->
+<div id="modal-vencedor" class="hide" style="padding: 20px; background: white; border-radius: 10px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 9999;">
+  <h2>Parabéns, você venceu!</h2>
+  <button onclick="document.getElementById('modal-vencedor').style.display='none'">Fechar</button>
+</div>
+
+<!-- Fade (caso você tenha usado algum efeito de transição) -->
+<div id="fade" class="hide"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let total = 0;
+
+function marcarPalavra(palavra) {
+    const lista = document.querySelectorAll(".bpal p");
+    let quantidade = lista.length;
+    console.log(quantidade);
+    
+    lista.forEach(el => {
+        if (el.textContent.toLowerCase() === palavra.toLowerCase()) {
+            el.style.textDecoration = "line-through";
+            el.style.color = "gray"; // opcional
+            total += 1;
+
+            // Verifica se todas as palavras foram marcadas
+            if (total === quantidade) {
+                // Exibe o modal e dispara o confete quando todas as palavras foram encontradas
+                modal.classList.toggle("hide");
+                fade.classList.toggle("hide");
+
+                // Chama a função para mostrar o modal e disparar o confete
+                mostrarModalVencedor();
+            }
+        }
+    });
+}
+
+// Função para disparar o confete
+function dispararConfete() {
+    const minhaConfete = confetti.create(document.body, {
+        resize: true,
+        useWorker: true,
+    });
+
+    // Dispara o confete
+    minhaConfete({
+        particleCount: 100,
+        spread: 160,
+        origin: { y: 0.6 },
+        colors: ['#f9fbfcff', '#0cbef5ff', '#0000ff'],
+    });
+}
+
+// Função para exibir o modal vencedor e disparar o confete automaticamente
+function mostrarModalVencedor() {
+    // Mostrar o modal
+    document.getElementById("modal-vencedor").style.display = "block";
+    
+    // Disparar o confete
+    dispararConfete();
+}
