@@ -57,5 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
     grade = criaMatrizComPalavras(23, palavras);
     exibeMatriz(grade, "matriz");
     startTimer();
+      const lista = document.querySelectorAll(".bpal p");
+  lista.forEach(el => {
+    el.style.textDecoration = "none";
+    el.style.color = "black"; // ou a cor original
+  });
+
+  // 🔹 Resetar contador de palavras encontradas
+  if (typeof total !== "undefined") {
+    total = 0;
+  }
   });
 });
