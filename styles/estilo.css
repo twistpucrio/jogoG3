@@ -85,11 +85,11 @@ button:hover {
     top: 50%;
     z-index: 10;
     transform: translate(-50%, -50%);
-    background-color: #000099;
+    background-color: white;
     width: 800px;
     padding: 1.2rem;
     border-radius: .5rem;
-    color: white;
+    color: black;
 
 }
 
