@@ -176,7 +176,8 @@ font-size:25px;
 }
 
 .selected {
-background-color: yellow;
+background-color: #000099;
+color: white;
 }
 
 .found {
@@ -208,4 +209,22 @@ user-select: none; /* impede seleção de texto */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#placar{
+    float: right;
+    border-radius: 10px;
+    border: 3px solid #33CCFF;
+    width: 300px;
+    height: 35px;
+    background-color: #33CCFF;
+    color: #000099;
+    font-size: 15pt;
+    font-family: 'jogo2';
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 auto;
+    padding: 5px;
+    text-decoration: none;
 }

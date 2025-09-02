@@ -57,5 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     grade = criaMatrizComPalavras(18, palavras);
     exibeMatriz(grade, "matriz");
     startTimer();
+    zerarPontos();
   });
 });
