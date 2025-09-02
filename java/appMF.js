@@ -58,5 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
     exibeMatriz(grade, "matriz");
     startTimer();
     zerarPontos();
+      const lista = document.querySelectorAll(".bpal p");
+  lista.forEach(el => {
+    el.style.textDecoration = "none";
+    el.style.color = "black"; // ou a cor original
+  });
+
+  // 🔹 Resetar contador de palavras encontradas
+  if (typeof total !== "undefined") {
+    total = 0;
+  }
   });
 });

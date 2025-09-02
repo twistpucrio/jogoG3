@@ -17,7 +17,7 @@
     transform: translateX(-50%) translateY(-100%);
     width: 90%;
     max-width: 400px;
-    background-color:white ;
+    background-color: white;
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
@@ -46,6 +46,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    
 }
     
 .modal-buttons button {
@@ -55,11 +56,14 @@
   font-family: "jogo2", sans-serif; 
   text-align: center; 
   border: none; 
-  background-color:#1A66CC; 
+  background-color:#666464; 
   color: white; 
   cursor: pointer; 
   border-radius: 5px;
   transition: background-color 0.3s ease;
+}
+.modal link{
+    color:white;
 }
 
 @keyframes slideDown {
@@ -71,4 +75,3 @@
         transform: translateX(-50%) translateY(-50%);
     }
 }
-

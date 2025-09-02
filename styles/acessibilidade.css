@@ -1,14 +1,14 @@
-@import url(/font/Bitcount/Bitcount-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+@import url(/jogoG3/font/Bitcount/Bitcount-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
 @font-face {
     font-family: "JogoFont";
-    src: url(/font/Bitcount/Bitcount-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf)
+    src: url(/jogoG3/font/Bitcount/Bitcount-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf)
     format('truetype');
 }
 
-@import url(/font/Press_Start_2P/PressStart2P-Regular.ttf);
+@import url(/jogoG3/font/Press_Start_2P/PressStart2P-Regular.ttf);
 @font-face {
     font-family: "jogo2";
-    src: url(/font/Press_Start_2P/PressStart2P-Regular.ttf)
+    src: url(/jogoG3/font/Press_Start_2P/PressStart2P-Regular.ttf)
     format('truetype');
 }
 
@@ -145,6 +145,7 @@ button:hover {
     opacity:1;
     visibility: visible;
 }
+
 
 /*CSS: Sobre Nós*/
 
