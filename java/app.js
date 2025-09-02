@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     grade = criaMatrizComPalavras(13, palavras);
     exibeMatriz(grade, "matriz");
     startTimer();
+    zerarPontos();
     const lista = document.querySelectorAll(".bpal p");
   lista.forEach(el => {
     el.style.textDecoration = "none";

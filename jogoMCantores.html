@@ -14,13 +14,15 @@
     <script src="java/scriptMD.js"></script>
     <script src="java/appMCantores.js"></script>
     <script src="java/drag.js"></script>
+    <script src="java/placar.js"></script>
     <script src="java/mudanca_de_cor.js" defer></script>
 
 </head>
 <body id="bod">
     <nav id="menu">
-         <a class="box3" href="jogoFCantores.html">Voltar</a>
-          <a class="box3" href="index.html">Home</a>
+        <a class="box3" href="jogoFCantores.html">Voltar</a>
+        <a class="box3" href="index.html">Home</a>
+        <p id="placar">Pontuação:<span id="pontos">0</span></p>
     </nav>
     <br/><br/>
     <div id="principal">
@@ -76,7 +78,7 @@
         </div>
         <br/><br/>
 
-        <a class="box3 btn" href="jogoDCantores.html">Próximo</a>
+        <a class="box3 btn" href="jogoDCantores.html" onclick="zerarPontos();">Próximo</a>
 
       </div>
     </section>
@@ -85,9 +87,9 @@
         <img src="img/você-perde-o-carimbo-de-borracha-110063319.webp" alt="Tempo esgotado!" class="modal-image">
         <h2>Tempo esgotado!</h2>
         <div class="modal-buttons">
-          <button onclick="irParaMenu()">Voltar ao Menu</button>
-          <button onclick="tentarNovamente()">Tentar Novamente</button>
-          <button onclick="trocarTema()">Trocar Tema</button>
+          <button onclick="irParaMenu(); zerarPontos();">Voltar ao Menu</button>
+          <button onclick="tentarNovamente(); zerarPontos();">Tentar Novamente</button>
+          <button onclick="trocarTema(); zerarPontos();">Trocar Tema</button>
         </div>
       </div>
     </div>
@@ -117,3 +119,7 @@
         </div>
 </body>
 </html>
+
+<script>
+  let nivel = "medio";
+</script>

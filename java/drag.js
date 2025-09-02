@@ -61,6 +61,7 @@ function addGridListeners(container) {
 
     // Chama a função para riscar na lista
     marcarPalavra(palavra);
+    adicionarPontos();
 } else {
     clearSelection();
 }
