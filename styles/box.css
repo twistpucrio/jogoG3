@@ -181,7 +181,8 @@ color: white;
 }
 
 .found {
-background-color: lightgreen;
+background-color: #1f8bd3;
+color: white;
 }
 
 #grid {
