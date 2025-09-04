@@ -63,6 +63,17 @@
   line-height: 1.5;
 }
 
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;  /* não bloquear cliques */
+  z-index: 99999;        /* fica por cima de tudo */
+}
+
+
 @keyframes slideDown {
     to {
         transform: translateX(-50%) translateY(-100%);
