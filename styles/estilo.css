@@ -245,3 +245,10 @@ a.btn{
     border: #1A66CC solid 5px;
     color: white;
 }
+
+.parabens{
+    font-family: 'jogo2';
+    font-size: 18pt;
+    display: inline-block; /* ou já é inline */
+    margin: 0 auto;
+}

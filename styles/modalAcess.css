@@ -62,6 +62,21 @@
   transition: background-color 0.3s ease;
   line-height: 1.5;
 }
+
+.modal-buttons a {
+  flex: 1;
+  padding: 10px 10;
+  font-size: 16px;
+  font-family: "jogo2", sans-serif; 
+  text-align: center; 
+  border: none; 
+  background-color:#666464; 
+  color: white; 
+  cursor: pointer; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  line-height: 1.5;
+}
 .modal link{
     color:white;
 }
