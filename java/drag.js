@@ -166,9 +166,13 @@ function marcarPalavra(palavra) {
             total +=1;
       
 
+            
+
+
       if (total === quantidade) {
         if (window.modal && window.fade) {
           window.modal.classList.remove('hide');
+          clearInterval(timerInterval); // para o cronômetro
           window.fade.classList.remove('hide');
         } 
         
