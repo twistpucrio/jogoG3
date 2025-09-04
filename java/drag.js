@@ -103,9 +103,9 @@ function marcarPalavra(palavra) {
 
             if (total === quantidade){
                 // contador para modal
-                    modal.classList.toggle("hide");
-                    fade.classList.toggle("hide");    
-                    
+                modal.classList.toggle("hide");
+                clearInterval(timerInterval); // para o cronômetro
+                fade.classList.toggle("hide");    
             }
 
            

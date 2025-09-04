@@ -47,6 +47,7 @@ function trocarTema() {
   window.location.href = "pag1.html";
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
   // Initial matrix render
   let grade = criaMatrizComPalavras(13, palavras);
@@ -75,3 +76,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
