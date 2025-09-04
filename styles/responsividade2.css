@@ -153,3 +153,160 @@ font-size:10px;
 
 
 }
+
+
+@media screen and (800px <=width <=1600px){
+    .boxQuadrado{
+    width:300px;
+    height:20px;
+    font-size:20pt;
+   }
+ 
+    div.box1BemVindos{
+    width:600px;
+    height:200px;
+    font-size: 15pt;
+ 
+    }
+.boxQuadradoCentro{
+    border-radius: 10px;
+     width:300px;
+    height:20px;
+      font-size:20pt;
+    display: inline-block;
+    text-align: center;
+    font-family: 'jogo2';
+    margin:50px;
+    padding:8%;
+     align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
+
+#p1{
+    font-size: 65pt;
+}
+
+div.box1{
+    width:600px;
+   height:200px;
+}
+.box2{
+    width:150px;
+    height:35px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+}
+#tema{
+     font-size: 15pt;
+}
+.a1{
+    font-size: 15pt;;
+}
+
+.box3{ 
+    width:100px;
+    height:20px;
+    font-size:10pt;
+    
+}
+
+#placar{ 
+    width:200px;
+    height:20px;
+    font-size:10pt;
+    
+}
+#openModal{
+    font-size: 20pt;
+}
+
+#div1{
+    width:520px;
+    height:450px;
+    font-size:10pt;
+  
+    
+}
+a.btn{
+    font-size: 10pt;
+}
+#btnGerar{
+    font-size: 10pt;
+}
+#tit{
+    font-size:12pt;
+}
+div.bpal{
+    border-radius: 10px;
+ 
+    width: 100px;
+    height: 20px;
+   
+     
+    margin: 5px 0;        /* só espaçamento vertical, sem empurrar para o lado */
+    padding: 5px;
+    text-align: center;
+}
+#pp{
+    font-size: 7pt;
+}
+#div2{
+    width:850px;
+    height:650px;
+    font-size:11pt;
+}
+#div3{
+    width:900px;
+    height:800px;
+    font-size:10pt; 
+}
+
+#p2{
+    font-size:30pt;
+}
+h3{
+    font-size: 14pt;
+}
+.bolinha{
+    height: 120px;
+    
+}
+
+p.texto{
+    font-size: 10pt;
+       
+    
+}
+.foto{
+    font-size: 15pt;
+     
+}
+h5{
+    font-size: 10pt;
+}
+.rede_social{
+    width: 20px;
+}
+.email{
+    font-size: 6pt;
+    
+}
+#paragrafo{
+    font-size:9pt;
+}
+div.facilmatriz{
+    font-size: 10pt;
+}
+
+
+.grid-cell{
+font-size:10px;
+ letter-spacing: -0.5px;
+ 
+}
+
+
+}

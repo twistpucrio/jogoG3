@@ -131,7 +131,7 @@ button:hover {
 
 #modal.hide{
     top:0;
-    transition:1s;
+    transition:.1s;
 }
 
 #modal.hide,
@@ -141,7 +141,7 @@ button:hover {
 }
 
 #fade, #modal{
-    transition: .5s ease;
+    transition: .1s ease;
     opacity:1;
     visibility: visible;
 }
