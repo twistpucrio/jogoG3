@@ -128,6 +128,7 @@ function addGridListeners(container) {
 
        
         marcarPalavra(palavra);
+        adicionarPontos();
         
         } else {
         clearSelection();
