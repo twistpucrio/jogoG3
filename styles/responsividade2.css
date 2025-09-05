@@ -163,9 +163,9 @@ font-size:10px;
    }
  
     div.box1BemVindos{
-    width:600px;
-    height:200px;
-    font-size: 15pt;
+    width:900px;
+    height:240px;
+    font-size: 19pt;
  
     }
 .boxQuadradoCentro{
@@ -185,31 +185,33 @@ font-size:10px;
 }
 
 #p1{
-    font-size: 95pt;
+    font-size: 130pt;
 }
 
 div.box1{
-    width:600px;
-   height:200px;
+    width:900px;
+   height:300px;
 }
+
 .box2{
-    width:150px;
-    height:35px;
-    line-height: 30px;
+    width:200px;
+    height:60px;
+    line-height: 55px;
     text-align: center;
     justify-content: center;
+    margin-top: 50px;
 }
 #tema{
      font-size: 15pt;
 }
 .a1{
-    font-size: 15pt;;
+    font-size: 19pt;
 }
 
 .box3{ 
-    width:100px;
-    height:20px;
-    font-size:10pt;
+    width:150px;
+    height:40px;
+    font-size:15pt;
     
 }
 
@@ -231,19 +233,19 @@ div.box1{
     
 }
 a.btn{
-    font-size: 10pt;
+    font-size: 13pt;
 }
 #btnGerar{
     font-size: 10pt;
 }
 #tit{
-    font-size:12pt;
+    font-size:15pt;
 }
 div.bpal{
     border-radius: 10px;
  
-    width: 100px;
-    height: 20px;
+    width: 200px;
+    height: 50px;
    
      
     margin: 5px 0;        /* só espaçamento vertical, sem empurrar para o lado */
@@ -251,7 +253,7 @@ div.bpal{
     text-align: center;
 }
 #pp{
-    font-size: 7pt;
+    font-size: 11fpt;
 }
 #div2{
     width:850px;
@@ -303,9 +305,31 @@ div.facilmatriz{
 
 
 .grid-cell{
-font-size:10px;
+font-size:16px;
  letter-spacing: -0.5px;
  
+}
+
+#div1{
+    width: 550px;
+    height: 550px;
+}
+
+#div3{
+    width: 1000px;
+    height: 800px;
+}
+
+#timer{
+    font-size: 12pt;
+    display: inline-block;
+    height: 70px;
+}
+
+#placar{
+    font-size: 11pt;
+    height: 40px;
+    width: 250px;
 }
 
 
